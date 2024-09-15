@@ -20,7 +20,6 @@ exports.handler = async (event) => {
         if (data.event === 'product:created') {
             // Your logic to handle the "product:created" event
             console.log('Product Created Event:', data);
-            console.log("nda a said");
         }
 
         return {
