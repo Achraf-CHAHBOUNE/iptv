@@ -929,6 +929,10 @@ object {
   .section-header {
     font-size: 40px;
   }
+  .section-subtext {
+    display: none;
+  }
+  
 }
 .section-header.style-two {
   gap: 20px;
