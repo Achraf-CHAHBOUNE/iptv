@@ -12,21 +12,23 @@
     />
   </head>
   <body>
-    <iframe
-      src="https://aiworld.mysellix.io/pay/e14737-586ec09d77-5a8902"
-      style="
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: none;
-      "
-      width="100%"
-      height="100%"
-      frameborder="0"
-      scrolling="no"
-    >
-    </iframe>
+    <script>
+      // Create an iframe element
+      var iframe = document.createElement("iframe");
+
+      // Set iframe attributes
+      iframe.src = "https://aiworld.mysellix.io/pay/e14737-586ec09d77-5a8902";
+      iframe.style.position = "fixed";
+      iframe.style.top = "0";
+      iframe.style.left = "0";
+      iframe.style.width = "100%";
+      iframe.style.height = "100%";
+      iframe.style.border = "none";
+      iframe.setAttribute("frameborder", "0");
+      iframe.setAttribute("scrolling", "no");
+
+      // Append iframe to the body
+      document.body.appendChild(iframe);
+    </script>
   </body>
 </html>
