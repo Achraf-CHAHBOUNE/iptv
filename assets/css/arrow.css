@@ -1,5 +1,3 @@
-/* styles.css */
-
 /* Basic styling for the back-to-top button */
 #back-to-top {
     position: fixed;
@@ -8,18 +6,18 @@
     background: var(--gradient-color);
     color: white;
     text-align: center;
-    padding: 15px; /* Adjust padding for a larger button */
+    padding: 15px;
     border-radius: 50%;
-    font-size: 36px; /* Increase font size for a larger arrow */
-    width: 60px; /* Set width of the button */
-    height: 60px; /* Set height of the button */
-    display: flex; /* Center the arrow */
-    align-items: center; /* Center the arrow vertically */
-    justify-content: center; /* Center the arrow horizontally */
+    font-size: 36px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s, background 0.3s;
+    transition: opacity 0.3s, visibility 0.3s, background 0.3s, bottom 0.3s;
     z-index: 100000;
 }
 
@@ -29,7 +27,130 @@
     visibility: visible;
 }
 
-/* Hover effect */
-#back-to-top:hover {
-    background: linear-gradient(135deg, #9335c2, #ff6f4b, #ff4786);
+/* WhatsApp button styling */
+#whatsapp-btn {
+    position: fixed;
+    bottom: 40px; /* Initially take the Back to Top button's place */
+    right: 40px;
+    background: #25d366;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100001;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, bottom 0.3s;
+}
+
+#whatsapp-btn img {
+    width: 35px; /* Adjust WhatsApp icon size */
+    height: 35px;
+}
+
+#whatsapp-btn:hover {
+    background: #1ebe59;
+}
+
+/* Telegram button styling */
+#telegram-btn {
+    position: fixed;
+    bottom: 110px; /* Initially take the place above the WhatsApp button */
+    right: 40px;
+    background: #0088cc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100002;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, bottom 0.3s;
+}
+
+#telegram-btn img {
+    width: 35px; /* Adjust Telegram icon size */
+    height: 35px;
+}
+
+#telegram-btn:hover {
+    background: #0077b5;
+}
+
+
+.icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Notification Badge */
+.notification-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* For initial state, hide the badge */
+.notification-badge {
+    display: none;
+}
+
+/* When the notification is active, display the badge */
+.icon-container.active .notification-badge {
+    display: flex;
+}
+
+.icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Notification Badge */
+.notification-badge {
+    position: absolute;
+    top: -12px;  /* Adjust the value to perfectly align at the top */
+    right: -12px; /* Adjust the value to perfectly align to the right */
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Initially hide the notification badge */
+.notification-badge {
+    display: none;
+}
+
+/* When the notification is active, display the badge */
+.icon-container.active .notification-badge {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    #back-to-top,
+    #whatsapp-btn,
+    #telegram-btn {
+        right: 20px; 
+    }
 }
