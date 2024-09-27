@@ -9,8 +9,8 @@
     padding: 15px;
     border-radius: 50%;
     font-size: 36px;
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,8 +34,8 @@
     right: 40px;
     background: #25d366;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,8 +61,8 @@
     right: 40px;
     background: #0088cc;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,8 +122,8 @@
 /* Notification Badge */
 .notification-badge {
     position: absolute;
-    top: -11px;  /* Adjust the value to perfectly align at the top */
-    right: -11px; /* Adjust the value to perfectly align to the right */
+    top: -14px;  /* Adjust the value to perfectly align at the top */
+    right: -14px; /* Adjust the value to perfectly align to the right */
     background-color: red;
     color: white;
     border-radius: 50%;
