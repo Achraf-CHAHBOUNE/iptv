@@ -122,8 +122,8 @@
 /* Notification Badge */
 .notification-badge {
     position: absolute;
-    top: -14px;  /* Adjust the value to perfectly align at the top */
-    right: -14px; /* Adjust the value to perfectly align to the right */
+    top: -14px; 
+    right: -14px; 
     background-color: red;
     color: white;
     border-radius: 50%;
