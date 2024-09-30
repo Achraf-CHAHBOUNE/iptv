@@ -433,7 +433,7 @@
               </li>
               <!-- v 1.0.1 -->
               <li class="menu-item menu-item-has-children">
-                <a href="#pricing" class="menu-link">
+                <a href="#" class="menu-link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -460,7 +460,35 @@
                     />
                   </svg>
                   <span>Pricing</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="6"
+                    viewBox="0 0 14 6"
+                    fill="none"
+                    class="mt-03"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.04953 2.42633C1.8325 1.56584 0.67034 1.2 0.113525 1.2V0C1.07338 0 2.51122 0.534159 3.84003 1.47367C4.86479 2.19822 5.87815 3.19989 6.61353 4.48107C7.3489 3.19989 8.36226 2.19822 9.38702 1.47367C10.7158 0.534159 12.1537 0 13.1135 0V1.2C12.5567 1.2 11.3946 1.56584 10.1775 2.42633C9.03311 3.23547 7.92033 4.42834 7.30175 6H6.61353L6.61353 6L6.61352 6H5.9253C5.30672 4.42834 4.19394 3.23547 3.04953 2.42633Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
                 </a>
+
+                <ul class="sub-menu">
+                  <li class="sub-menu--item">
+                    <a href="#Golden" class="sub-menu--link"
+                      >🌟 Golden IPTV Subscription</a
+                    >
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="#Platinum" class="sub-menu--link"
+                      >💎 Platinum IPTV Subscription</a
+                    >
+                  </li>
+                </ul>
               </li>
               <!-- v 1.0.1 -->
               <li class="menu-item menu-item-has-children">
@@ -513,6 +541,24 @@
                     />
                   </svg>
                   <span>FAQ</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#test" class="menu-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12c0 5.52 4.48 10 10 10s10-4.48 10-10c0-5.52-4.48-10-10-10zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"
+                      fill="currentColor"
+                    />
+                  </svg>
+
+                  <span>Test Service</span>
                 </a>
               </li>
             </ul>
@@ -624,11 +670,19 @@
                   >
                     <a href="#">Home</a>
                   </li>
-                  <li
-                    class="nav-movie menu-item menu-item-type-post_type menu-item-object-page menu-item-1760"
-                  >
-                    <a href="#pricing">pricing</a>
+
+                  <li class="nav-pages menu-item menu-item-has-children">
+                    <a href="#">pricing</a>
+                    <ul class="sub-menu" style="display: none">
+                      <li class="menu-item">
+                        <a href="#Golden">🌟 Golden IPTV Subscription</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#Platinum">💎 Platinum IPTV Subscription</a>
+                      </li>
+                    </ul>
                   </li>
+
                   <li
                     class="nav-pages menu-item menu-item-type-custom menu-item-object-custom menu-item-438"
                   >
@@ -637,7 +691,12 @@
                   <li
                     class="nav-faq menu-item menu-item-type-post_type menu-item-object-page menu-item-758"
                   >
-                    <a href="#faq">Faq</a>
+                    <a href="#test">Faq</a>
+                  </li>
+                  <li
+                    class="nav-faq menu-item menu-item-type-post_type menu-item-object-page menu-item-758"
+                  >
+                    <a href="#test">Test Service</a>
                   </li>
                 </ul>
               </div>
@@ -2885,7 +2944,7 @@
 
       <!-- Start Our Golden Pricing Area -->
 
-      <div class="d-flex justify-content-center mt-40 mb-40">
+      <div id="Golden" class="d-flex justify-content-center mt-40 mb-40">
         <div class="section-header">
           <span>🌟</span>
           <h3 class="section-title lh-1 mt-2 mb-0">Golden IPTV Subscription</h3>
@@ -4058,7 +4117,7 @@
       </div>
 
       <!-- Start Our platinium Pricing Area -->
-      <div class="d-flex justify-content-center mt-40 mb-40">
+      <div id="Platinum" class="d-flex justify-content-center mt-40 mb-40">
         <div class="section-header">
           <span>💎</span>
           <h3 class="section-title lh-1 mt-2 mb-0">
@@ -5438,7 +5497,7 @@
                     aria-expanded="false"
                     aria-controls="collapseFive"
                   >
-                    <span>How Can I Get a Free Trial?</span>
+                    <span id="test">How Can I Test The Service?</span>
                   </button>
                 </h3>
                 <div
@@ -5449,13 +5508,17 @@
                 >
                   <div class="accordion-body faq-accordion--body fw-medium">
                     <p class="fw-medium mb-0">
-                      To get started with a free 24-hour trial of our IPTV
-                      service, simply reach out to us via WhatsApp or email.
-                      We'll provide you with instant access so you can
-                      experience our service and evaluate its features and
-                      performance. Take advantage of this no-risk opportunity to
-                      explore everything we offer. Contact us today to begin
-                      your free trial!
+                      We offer a 24-hour trial of our IPTV service for just $1,
+                      the 1$ to ensure that our clients are serious about
+                      testing our services. This nominal fee helps us filter out
+                      individuals who may take advantage of free trials without
+                      genuine intent to evaluate the service. By reaching out to
+                      us via WhatsApp or email, you can instantly access our
+                      service and explore its features and performance without
+                      any risk. If you decide to make a purchase, we’ll apply
+                      this $1 toward your next transaction, giving you a
+                      discount. Contact us via WhatsApp or Telegram to start
+                      your trial today!
                     </p>
                   </div>
                 </div>
