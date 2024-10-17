@@ -611,6 +611,7 @@ code {
   position: absolute;
   bottom: 100%;
   left: 50%;
+  cursor: pointer;
   transform: translateX(-50%);
   background-color: #333;
   color: #fff;
